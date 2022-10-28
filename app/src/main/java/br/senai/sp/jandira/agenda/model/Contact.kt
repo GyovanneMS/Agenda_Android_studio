@@ -19,9 +19,9 @@ class Contact {
     var email = "";
 
     @ColumnInfo(name = "data_nascimento")
-    var dataNascimento: LocalDate? = null;
+    var dataNascimento = "";
 
-    var foto: Drawable? = null;
+    var foto = "";
 
 
 }

@@ -53,5 +53,5 @@ dependencies {
     //Dependências do ROOM, Vamos usar a biblioteca ROOM para usar o bd local
     //ORM - "Cria o banco de dados" Modelo objeto relacional
     implementation 'androidx.room:room-runtime:2.4.3'
-    annotationProcessor 'androidx.room:room-compiler:2.4.3'
+    kapt 'androidx.room:room-compiler:2.4.3'
 }

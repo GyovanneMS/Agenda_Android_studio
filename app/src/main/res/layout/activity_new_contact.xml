@@ -35,32 +35,13 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="5dp"
                 android:ems="10"
                 android:hint="Nome"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                app:layout_constraintBottom_toTopOf="@+id/Text_Email"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/Text_Email"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="5dp"
-                android:ems="10"
-                android:hint="Email"
-                android:inputType="textPersonName"
-                android:minHeight="48dp"
-                app:layout_constraintBottom_toTopOf="@+id/Text_Telefone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Text_Nome" />
 
             <EditText
                 android:id="@+id/Text_Telefone"
@@ -74,39 +55,53 @@
                 android:hint="Telefone"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+                app:layout_constraintBottom_toTopOf="@+id/text_dataNasimento"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Text_Email" />
 
             <Button
-                android:id="@+id/Button_New_Contact"
+                android:id="@+id/Button_New_Contact_Save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Button"
+                android:text="Salvar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+                app:layout_constraintTop_toBottomOf="@+id/text_dataNasimento" />
 
             <EditText
-                android:id="@+id/editTextDate"
+                android:id="@+id/text_dataNasimento"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="5dp"
                 android:ems="10"
                 android:hint="Data de Nascimento"
                 android:inputType="date"
                 android:minHeight="48dp"
-                app:layout_constraintBottom_toTopOf="@+id/Button_New_Contact"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Text_Telefone" />
+
+            <EditText
+                android:id="@+id/Text_Email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Text_Nome" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
