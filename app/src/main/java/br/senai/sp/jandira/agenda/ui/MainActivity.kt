@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         //Pegando o metodo (Tipo o controler) getall() da "model" ContactRepository
         val contatos = repositorio.getAll();
         //Chamando o método do adapter para criar um json com cada item pedo dos contatos
-        adapter = ContactAdapter(contatos)
+        adapter = ContactAdapter(contatos, this)
         //Pegando a view e colocando "todos" os contatos nela
         binding.RvContatos.adapter = adapter;
         //Como visualizar isso?
