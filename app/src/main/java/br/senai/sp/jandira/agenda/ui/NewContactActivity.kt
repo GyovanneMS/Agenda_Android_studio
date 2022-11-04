@@ -43,5 +43,7 @@ class NewContactActivity : AppCompatActivity() {
         val id = contactRepository.save(contact);
 
         Toast.makeText(this, "ID: $id ", Toast.LENGTH_LONG).show()
+
+        finish()
     }
 }
